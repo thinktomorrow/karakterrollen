@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "icons": [
+    {
+        "src": "/assets/front/img/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    },
+    {
+        "src": "/assets/front/img/android-chrome-256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+    }
+    ],
+    "start_url": "/?utm_source=a2hs",
+    "theme_color": "",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

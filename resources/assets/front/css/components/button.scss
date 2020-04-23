@@ -1,0 +1,36 @@
+// Generic button class
+.btn {
+    @apply inline-block py-2 px-4 rounded-sm cursor-pointer;
+}
+
+.btn-primary {
+    @apply bg-primary-500 text-white;
+}
+
+.btn-primary:hover {
+    @apply bg-primary-600 no-underline;
+}
+
+.btn-secondary {
+    @apply bg-secondary-500 text-white;
+}
+
+.btn-secondary:hover {
+    @apply bg-secondary-600 no-underline;
+}
+
+.btn-default {
+    @apply bg-transparent text-base;
+}
+
+.btn-default:hover {
+    @apply bg-primary-100 no-underline;
+}
+
+.btn-secondary-outline {
+    @apply border-secondary-400 border-2 text-secondary-400 font-bold;
+}
+
+.btn-secondary-outline-filled {
+    @apply border-secondary-400 bg-secondary-400 border-2 text-white font-bold;
+}

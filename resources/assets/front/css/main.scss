@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*
+ * Frontend styling guide
+ *
+ * We use a utility first css approach. The focus is on reusable css and not so much on restylable html.
+ * More info in our package docs ...
+ *
+ */
+@tailwind base;
+@tailwind components;
+@import 'warpaint';
+
+/*
+ * Custom css
+ *
+ * Here we list custom utilities and component files. We try to reduce these to a minimum and
+ * focus on reusing existing utilities. There are 3 main directories:
+ *
+ * - general: contains project wide styling,
+ * - component: that contains reusable but project specific components (e.g. card, button).
+ * - vendor: contains third-party files that can be manipulated / optimized for the project.
+ */
+@import 'general/base';
+@import 'general/typography';
+
+@import 'components/button';
+@import 'components/form';
+
+// STATES & HELPER CLASSES
+@tailwind utilities;
+@import '../../../../node_modules/warpaint/src/sass/_space/spaces';
+@import '../../../../node_modules/warpaint/src/sass/_space/responsive';
+@import '../../../../node_modules/warpaint/src/sass/_base/states';
+@import 'general/overrides';
+@import 'general/utilities';

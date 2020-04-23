@@ -1,0 +1,13 @@
+// override warpaint h1 margin bottom rules
+h1.mb-0, h2.mb-0{
+    margin-bottom: 0;
+}
+
+button:focus {
+    outline: none;
+}
+
+// Use hidden in combination with the flex property
+.center-center.hidden{
+    display:none;
+}

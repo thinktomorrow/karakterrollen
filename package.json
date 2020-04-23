@@ -1,0 +1,36 @@
+{
+    "private": true,
+    "scripts": {
+        "front": "npm run _development -- --env.mixfile=webpack.front.mix.js",
+        "watch-front": "npm run _development -- --env.mixfile=webpack.front.mix.js --watch --watch-poll",
+        "prod-front": "npm run _production -- --env.mixfile=webpack.front.mix.js",
+        "back": "npm run _development -- --env.mixfile=webpack.back.mix.js",
+        "watch-back": "npm run _development -- --env.mixfile=webpack.back.mix.js --watch --watch-poll",
+        "prod-back": "npm run _production -- --env.mixfile=webpack.back.mix.js",
+        "_development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "_watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "_production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "test": "mocha-webpack --webpack-config=node_modules/laravel-mix/setup/webpack.config.js --require=tests/Vue/setup.js tests/Vue/**/*.spec.js",
+        "watch-test": "mocha-webpack --webpack-config=node_modules/laravel-mix/setup/webpack.config.js --watch --require=tests/Vue/setup.js tests/Vue/**/*.spec.js"
+    },
+    "devDependencies": {
+        "cross-env": "^6.0",
+        "es6-promise": "^4.2.8",
+        "lodash": "^4.17.15",
+        "modernizr": "^3.8.0",
+        "sass-loader": "^7.3.1",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "@bugsnag/js": "^6.4.3",
+        "axios": "^0.19.0",
+        "justforshow": "^0.1.11",
+        "laravel-mix": "^5.0.0",
+        "laravel-mix-purgecss": "^4.2.0",
+        "node-sass": "^4.13.0",
+        "npm": "^6.13.1",
+        "smoothscroll-polyfill": "^0.4.4",
+        "tailwindcss": "^1.1.4",
+        "warpaint": "^0.0.10"
+    }
+}
