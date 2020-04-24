@@ -1,22 +1,25 @@
 @extends('_layouts.master')
 
-{{-- @section('seo_title', $page->seo_title ?? $page->title)
-@section('seo_description', $page->seo_description ?? teaser($page->short, 255))
-@section('seo_social_image', $page->mediaUrl(\Thinktomorrow\Chief\Media\MediaType::THUMB))
-@section('seo_keywords', $page->seo_keywords ?? null) --}}
-
 @section('content')
-
-    <div class="">
-        <div class="content">
+<div  class="flex flex-wrap" style="flex:1">
+    @include('pages._partials.sidebar')
+    <div class="p-4 h-screen overflow-scroll" style="flex:4">
+        {{-- Intro  --}}
+        <header class="mb-6">
             <h2 class="mb-0">De balans</h2>
             <div class="subline">Stel een sterk team samen op basis van de verschillende karakterrollen</div>
-        </div>
-
-        <canvas id="teamChart" width="100" height="60" class="my-6"></canvas>
-
+        </header>
+        {{-- Make the pie --}}
+        <canvas id="teamChart" width="90" height="47"></canvas>
+        {{-- Give feedback about the team composition  --}}
+        <section class="px-4 py-2 bg-white shadow">
+            Het team mist nog een
+            <span class="bg-grey-200 text-grey-700 rounded px-2 py-1">Inspecteur</span>,
+            <span class="bg-grey-200 text-grey-700 rounded px-2 py-1">Communicator</span>
+            . Vergeet die rol zeker niet op te nemen.
+        </section>
     </div>
-
+</div>
 
 @endsection
 

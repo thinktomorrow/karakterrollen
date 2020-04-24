@@ -13,6 +13,17 @@
 Route::get('/', function(){
     return view('pages/dashboard');
 });
+Route::get('/samenstelling', ['as' => 'pages.dashboard',function() {
+    return view('pages/dashboard');
+}]);
+Route::get('/teamleden', ['as' => 'pages.members',function() {
+    return view('pages/members');
+}]);
+Route::get('/informatie', ['as' => 'pages.info',function() {
+    return view('pages/info');
+}]);
+
+
 
 Route::post('/contact/store', ['as' => 'contact.store', 'uses' => ContactFormController::class.'@store'])->middleware('honeypot');
 

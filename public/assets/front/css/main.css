@@ -2954,8 +2954,8 @@ h1 a {
 
 .member:hover {
   color: #50575E;
-  background-color: #C8D4DE;
-  border-color: #9FAFBB;
+  background-color: #E0E7EC;
+  border-color: #B1C2D0;
 }
 
 .member.selected {
@@ -2965,9 +2965,9 @@ h1 a {
 }
 
 .member.selected:hover {
-  color: #6D5529;
-  background-color: #F6D08C;
-  border-color: #DAA952;
+  color: #917137;
+  background-color: #FAE4BD;
+  border-color: #F6D08C;
 }
 
 .avatar {
