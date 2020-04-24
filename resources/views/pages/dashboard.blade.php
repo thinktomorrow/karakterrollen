@@ -12,7 +12,7 @@
         {{-- Make the pie --}}
         <canvas id="teamChart" width="90" height="47"></canvas>
         {{-- Give feedback about the team composition  --}}
-        <section class="px-4 py-2 bg-white shadow">
+        <section class="px-4 py-2 bg-white shadow w-1/2 mx-auto mt-4">
             Het team mist nog een
             <span class="bg-grey-200 text-grey-700 rounded px-2 py-1">Inspecteur</span>,
             <span class="bg-grey-200 text-grey-700 rounded px-2 py-1">Communicator</span>

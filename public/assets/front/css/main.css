@@ -2946,6 +2946,16 @@ h1 a {
   color: inherit;
 }
 
+::-moz-selection {
+  background-color: #FEF8EF;
+  color: #917137;
+}
+
+::-moz-selection, ::selection {
+  background-color: #FEF8EF;
+  color: #917137;
+}
+
 .member {
   color: #9FAFBB;
   background-color: #ECF0F3;
@@ -2993,6 +3003,8 @@ h1, h2, h3, h4 {
 body {
   font-family: noto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875rem;
+  line-height: 2;
+  letter-spacing: 0.025em;
 }
 
 .btn {
