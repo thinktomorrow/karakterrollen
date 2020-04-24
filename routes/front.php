@@ -11,16 +11,19 @@
 |
 */
 Route::get('/', function(){
-    return view('pages/dashboard');
+    return view('pages.dashboard');
+});
+Route::get('/mail', function(){
+    return view('mails.register');
 });
 Route::get('/samenstelling', ['as' => 'pages.dashboard',function() {
-    return view('pages/dashboard');
+    return view('pages.dashboard');
 }]);
 Route::get('/teamleden', ['as' => 'pages.members',function() {
-    return view('pages/members');
+    return view('pages.members');
 }]);
 Route::get('/informatie', ['as' => 'pages.info',function() {
-    return view('pages/info');
+    return view('pages.info');
 }]);
 
 
