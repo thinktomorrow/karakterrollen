@@ -6,3 +6,20 @@ a.active{
 h1 a{
   color:inherit;
 }
+
+.member{
+    @apply text-grey-600 bg-grey-200 border-grey-400;
+    &:hover{
+        @apply text-grey-800 bg-grey-400 border-grey-600;
+    }
+}
+.member.selected{
+    @apply text-primary-600 bg-primary-200 border-primary-400;
+    &:hover{
+        @apply text-primary-800 bg-primary-400 border-primary-600;
+    }
+}
+
+.avatar{@apply bg-grey-400; & svg{@apply text-grey-600}}
+.selected .avatar{@apply bg-primary-400; & svg{@apply text-primary-600}}
+

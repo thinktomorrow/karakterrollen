@@ -11,6 +11,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "6.*",
         "laravel/tinker": "^2.0",
+        "nothingworks/blade-svg": "^0.3.4",
         "thinktomorrow/locale": "^2.1"
     },
     "require-dev": {

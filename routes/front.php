@@ -11,7 +11,7 @@
 |
 */
 Route::get('/', function(){
-    return view('pages/home');
+    return view('pages/dashboard');
 });
 
 Route::post('/contact/store', ['as' => 'contact.store', 'uses' => ContactFormController::class.'@store'])->middleware('honeypot');

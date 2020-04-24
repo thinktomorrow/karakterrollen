@@ -8,5 +8,5 @@ window.CookieAccept = new CookieAccept({
     days: 7,
 });
 
-// import './toggle-class';
+import './toggle-class';
 // import './smooth-scroll';

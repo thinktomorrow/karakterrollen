@@ -15,41 +15,41 @@ module.exports = {
       black: '#000',
       white: '#fff',
 
-      primary: {
-        100: '#EFECEE', // lightest
-        200: '#DCD5DA', // even lighter
-        300: '#BEB4BB', // lighter
-        400: '#8D7C89', // light
-        500: '#5C4456',
-        600: '#533D4D', // dark
-        700: '#372934', // darker
-        800: '#2C212A', // even darker
-        900: '#1C141A', // darkest
-      },
+      'secondary': {
+        100: '#ECEAFC',
+        200: '#CFCBF6',
+        300: '#B2ACF1',
+        400: '#796DE7',
+        500: '#3F2FDC',
+        600: '#392AC6',
+        700: '#261C84',
+        800: '#1C1563',
+        900: '#130E42',
+        },
 
-      secondary: {
-        100: '#F7FEFB',
-        200: '#D2F9E8',
-        300: '#DFF9F0',
-        400: '#C6F5E4',
-        500: '#AEF0D9',
-        600: '#9DD8C3',
-        700: '#689082',
-        800: '#56766B',
-        900: '#344841',
-      },
+    'primary': {
+        100: '#FEF8EF',
+        200: '#FCEED6',
+        300: '#FAE4BD',
+        400: '#F6D08C',
+        500: '#F2BC5B',
+        600: '#DAA952',
+        700: '#917137',
+        800: '#6D5529',
+        900: '#49381B',
+        },
 
-      grey: {
-        100: '#f7fafc',
-        200: '#edf2f7',
-        300: '#e2e8f0',
-        400: '#cbd5e0',
-        500: '#a0aec0',
-        600: '#718096',
-        700: '#4a5568',
-        800: '#2d3748',
-        900: '#1a202c',
-      },
+    'grey': {
+        100: '#F7F9FA',
+        200: '#ECF0F3',
+        300: '#E0E7EC',
+        400: '#C8D4DE',
+        500: '#B1C2D0',
+        600: '#9FAFBB',
+        700: '#6A747D',
+        800: '#50575E',
+        900: '#353A3E',
+        },
     },
     spacing: {
       px: '1px',
@@ -146,6 +146,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+          'noto',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
@@ -160,6 +161,7 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: [
+          'Kreon',
         'Georgia',
         'Cambria',
         '"Times New Roman"',
