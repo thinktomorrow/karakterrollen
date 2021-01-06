@@ -23,7 +23,7 @@
     },
     "dependencies": {
         "@bugsnag/js": "^6.4.3",
-        "axios": "^0.19.0",
+        "axios": "^0.21.1",
         "justforshow": "^0.1.11",
         "laravel-mix": "^5.0.0",
         "laravel-mix-purgecss": "^4.2.0",
